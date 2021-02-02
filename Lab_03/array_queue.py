@@ -19,7 +19,7 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-from ..exceptions import Empty
+from queue import Empty
 
 class ArrayQueue:
   """FIFO queue implementation using a Python list as underlying storage."""
