@@ -19,7 +19,7 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-from .map_base import MapBase
+from map_base import MapBase
 
 class UnsortedTableMap(MapBase):
   """Map implementation using an unordered list."""
