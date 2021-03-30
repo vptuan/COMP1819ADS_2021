@@ -9,9 +9,9 @@ def inplace_quick_sort(S, a, b, level):
   if a >= b: return                                      # range is trivially sorted
   
   print("   "*level,"Level: ", level)
-  print("   "*level,"Sorting: ", S[a:b+1])
+  print("   "*level,"Sorting: ", a, b, S[a:b+1])
   pivot = S[b]                                           # last element of range is pivot
-  print("   "*level,"Pivot = ", pivot)
+  print("   "*level,"Pivot =", pivot)
   left = a                                               # will scan rightward
   right = b-1                                            # will scan leftward
   while left <= right:
@@ -27,7 +27,7 @@ def inplace_quick_sort(S, a, b, level):
       left, right = left + 1, right - 1                  # shrink range
 
   # put pivot into its final place (currently marked by left index)
-  print("   "*level,"Final left", left) 
+  print("   "*level,"Final left index", left) 
   S[left], S[b] = S[b], S[left]
   print("   "*level,"Final swap ", S[a:b+1])
   # make recursive calls
